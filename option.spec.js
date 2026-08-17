@@ -8,10 +8,10 @@ test('amazon dropdown text extract', async({page})=>{
     const options = await page.locator('//div[@id="nav-al-your-account"]/ul/li').allTextContents();
 
     console.log(options);
-    //await page.locator("//span[contains(text(),'Account & Lists')]").hover();
-    //const option = await page.locator("//span[contains(text(),'Account & Lists ')]").click()
-    // console.log(await option.count())
-    // console.log(await option.allInnerTexts())
+    await page.locator("//span[contains(text(),'Account & Lists')]").hover();
+    const option = await page.locator("//span[contains(text(),'Account & Lists ')]").click()
+    console.log(await option.count())
+    console.log(await option.allInnerTexts())
 
 
 })
