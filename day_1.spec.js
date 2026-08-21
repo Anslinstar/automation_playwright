@@ -85,21 +85,21 @@ import {test,chromium} from '@playwright/test';
 
 
 // iframes
-test('download', async({page})=>{
-    await page.goto('https://www.hyrtutorials.com/p/frames-practice.html')
+// test('download', async({page})=>{
+//     await page.goto('https://www.hyrtutorials.com/p/frames-practice.html')
    
-    const frame2= await page.frameLocator('#frm2')
-    await frame2.locator('#firstName').fill("anslin")
-    await page.waitForTimeout(3000)
-    const frame3= await page.frameLocator('#frm3')
-    const frame4 = await frame3.frameLocator('#frm2')
-    await frame4.locator('#lastName').fill("anslin")
-    await frame4.locator('#englishchbx').uncheck()
-    await frame4.locator('#englishchbx').check()
+//     const frame2= await page.frameLocator('#frm2')
+//     await frame2.locator('#firstName').fill("anslin")
+//     await page.waitForTimeout(3000)
+//     const frame3= await page.frameLocator('#frm3')
+//     const frame4 = await frame3.frameLocator('#frm2')
+//     await frame4.locator('#lastName').fill("anslin")
+//     await frame4.locator('#englishchbx').uncheck()
+//     await frame4.locator('#englishchbx').check()
     
    
-    await page.waitForTimeout(3000)
+//     await page.waitForTimeout(3000)
 
 
 
-})
+// })

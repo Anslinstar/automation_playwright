@@ -17,3 +17,19 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
+//li[contains(@class,"product-base")]
+
+
+import { test } from '@playwright/test';
+
+test('myntra_search', async ({ page }) => {
+
+    await page.goto('https://www.myntra.com/boy-tshirts', {
+        waitUntil: 'domcontentloaded',
+        timeout: 60000
+    });
+
+    const prices = page.locator("//li[@class="product-base"]");
+
+    console.log("Number of prices:", await prices.count());
+});
