@@ -73,15 +73,15 @@ import {test,chromium} from '@playwright/test';
 
 //file download
 
-// test('download', async({page})=>{
-//     await page.goto('https://demoqa.com/upload-download')
-//     await page.waitForTimeout(3000)
-//     const [download] = await Promise.all([
-//         page.waitForEvent("DOW")
-//     ])
-//     await page.locator("//label[@class='css-zpjtsm e12cce780']").setInputFiles("C:\\Users\\Star\\Documents\\playwright_project\\project_1\\tests\\textfile.txt")
-//     await page.waitForTimeout(3000)
-//     })
+test('download', async({page})=>{
+    await page.goto('https://demoqa.com/upload-download')
+    await page.waitForTimeout(3000)
+    const [download] = await Promise.all([
+        page.waitForEvent("DOW")
+    ])
+    await page.locator("//label[@class='css-zpjtsm e12cce780']").setInputFiles("C:\\Users\\Star\\Documents\\playwright_project\\project_1\\tests\\textfile.txt")
+    await page.waitForTimeout(3000)
+    })
 
 
 // iframes

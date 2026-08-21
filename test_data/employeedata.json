@@ -1,0 +1,15 @@
+{
+  "employee": {
+    "name": "Anslin",
+    "mobileNumbers": [
+      "7299380420",
+      "0987654322"
+    ],
+    "skills": [
+      "Java",
+      "Selenium",
+      "API",
+      "Playwright"
+    ]
+  }
+}
